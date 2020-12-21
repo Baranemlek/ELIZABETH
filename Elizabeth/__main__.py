@@ -47,59 +47,26 @@ from Elizabeth.modules.helper_funcs.alternate import typing_action
 
 
 PM_START_TEXT = f"""
-Hey there! my name is *{dispatcher.bot.first_name}*.
-Any questions on how to use me? use /help
+Selam {}, benim adım {}!
 
-Join Our [Group](https://t.me/Elizabeth_Support) If You wanna Report Issue 🙂
-
-I'm here to make your group management fun and easy!
-I have lots of handy features ☺️ such as :
-
-• flood control.         • Note'S keeping system.
-• Warning System.   • Predetermined Filters.
-
-*Managed With ❤️ By :* [༄ᶦᶰᵈ᭄𖤓𝐏 𝐑 𝐈 𝐍 𝐂 𝐄™ 🇮🇳](https://t.me/p_rinc_e)
-
-Wanna Add me to your Group? Just click the button below!
+Komutlar için /help
+Bu bot grub yönetim botudur
+Yetki vermeniz gerekir aksi halde
+botu sürekli başlatmanız gerekir
+yetkisi yokken mesajlara iletişimi yoktur
+Bi sorun bulursanız yada öneriniz var ise sahibime iletin [sahibim](tg://user?id={}).
 """
 
-buttons = [
-    [
-        InlineKeyboardButton(
-            text="Add to Group 👥", url="t.me/elizabeth_tgbot?startgroup=true"
-        ),
-        InlineKeyboardButton(
-            text="Gban Logs 🚫", url="https://t.me/telegram"
-        ),
-    ]
-]
-
-
-buttons += [
-    [
-        InlineKeyboardButton(
-            text="Help & Commands ❔",
-            url=f"t.me/{dispatcher.bot.username}?start=help",
-        ),
-        InlineKeyboardButton(
-            text="Support Group 🎗️", url="https://t.me/Elizabeth_Support"
-        ),
-    ]
-]
-
-
 HELP_STRINGS = f"""
-Hellow there! My name is *{dispatcher.bot.first_name}*.
-I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
-the things I can help you with.
 
-*Main* commands available:
- × /start: Starts me, can be used to check i'm alive or no...
- × /help: PM's you this message.
- × /help <module name>: PM's you info about that module.
- × /settings: in PM: will send you your settings for all supported modules.
-   - in a group: will redirect you to pm, with all that chat's settings.
- \nClick on the buttons below to get documentation about specific modules!"""
+Merhaba Benim adım *{}*.
+
+*Menü* için bazı komutlar:
+ - /start: botu başlat...
+ - /help: komutlar....
+ - /settings:
+   - özel mesajda: tüm ayarlar
+   - gurp içerisinde: grup ayarları"""
 
 
 STAFF_HELP_STRINGS = """Hey there staff users. Nice to see you :)
